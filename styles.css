@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+html {
+  background-color: black;
+}
+
+#bg {
+  position: fixed;
+  width: 100vw;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+#titleBox {
+  background-color: darkblue;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#titleBox h1 {
+    font-size: 40px;
+}
+
+#titleBox h3 {
+    font-size: 25px;
+}
+
+#imageBox {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#content {
+  background-color: darkblue;
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  padding-top: 20px;
+  margin-top: 30px;
+  height: fit-content;
+}
+
+#contentTitle {
+  margin-right: 1200px;
+}
+
+.gameCard {
+  background-color: blue;
+  padding: 20px;
+  height: 400px;
+  width: 400px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.gameCard h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.gameCard img {
+  height: 250px;
+  width: 350px;
+  object-fit: cover;
+  margin: 0px;
+}
+
+.gameCard a {
+  color: white;
+  margin-bottom: 5px;
+  padding: 0px;
+}
+
+.gameCard h2 {
+  margin: 0px;
+  margin-top: 10px;
+}
+
+#footer {
+    margin-top: 20px;
+}
+
+#footer a p {
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#bgmbtn {
+    background-color: blue;
+    color: white;
+}
