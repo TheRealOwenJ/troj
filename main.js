@@ -25,6 +25,20 @@ let audioContext;
 let analyser;
 let visualizerData;
 
+const indexedTracks = [
+    "eheh.mp3",
+    "escapeeatsectorb.mp3",
+    "itreadsaveragemeasurements.mp3",
+    "minorconfusionindistricta.mp3",
+    "ohnoes.mp3",
+    "partyfanfare.wav",
+    "rickcore.wav",
+    "uncleardisadvantage.mp3"
+].map(filename => ({
+    title: titleFromFilename(filename),
+    source: `bgm/${filename}`
+}));
+
 let car = document.getElementById("car");
 let x = -150;
 let direction = 1;
@@ -115,6 +129,8 @@ function renderTrackList() {
 }
 
 async function scanMusicFolder() {
+    tracks = indexedTracks;
+
     try {
         const response = await fetch("bgm/", { cache: "no-store" });
         if (!response.ok) throw new Error("The bgm folder could not be read.");
@@ -128,13 +144,7 @@ async function scanMusicFolder() {
                 return { title: titleFromFilename(filename), source: `bgm/${filename}` };
             })
             .sort((first, second) => first.title.localeCompare(second.title));
-    } catch (error) {
-        trackList.replaceChildren();
-        const message = document.createElement("span");
-        message.textContent = "RUN THIS SITE THROUGH A WEB SERVER TO SCAN BGM";
-        trackList.appendChild(message);
-        return;
-    }
+    } catch (error) {}
 
     renderTrackList();
     selectTrack(0);

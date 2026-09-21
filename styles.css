@@ -186,6 +186,7 @@ body {
     height: 150px;
     overflow: hidden;
     z-index: 1000;
+    pointer-events: none;
 }
 
 #car {
@@ -194,6 +195,7 @@ body {
     left: -150px;
     width: 150px;
     cursor: url("cursors/Portal Gun Orange Link Select.cur"), pointer;
+    pointer-events: auto;
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -moz-user-select: none;
