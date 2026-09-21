@@ -1,0 +1,45 @@
+﻿[Arrow]
+Path=Blue Portal Gun Normal Select.cur
+
+[Help]
+Path=Portal Cursor Help Select.cur
+
+[AppStarting]
+Path=Blue Portal Working In Background.ani
+
+[Wait]
+Path=Aperture Sciences Logo Busy.ani
+
+[Crosshair]
+Path=Portal Cursor Precision Select.cur
+
+[IBeam]
+Path=Orange Portal Text Select.ani
+
+[NWPen]
+Path=Portal Cursor Handwriting.cur
+
+[No]
+Path=Portal Gun Cancel Unavailable .cur
+
+[SizeNS]
+Path=Portal Cursor Vertical Resize.cur
+
+[SizeWE]
+Path=Portal Cursor Horizontal Resize.cur
+
+[SizeNWSE]
+Path=Portal Cursor Diagonal Resize 1.cur
+
+[SizeNESW]
+Path=Portal Cursor Diagonal Resize 2.cur
+
+[SizeAll]
+Path=Portal Cursor Move.cur
+
+[Hand]
+Path=Portal Gun Orange Link Select.cur
+
+[UpArrow]
+Path=Wheatley Core Alternative Select.ani
+
